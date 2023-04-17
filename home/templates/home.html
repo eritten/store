@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- header and nav -->
+<nav>
+    <a href="#" class="logo">
+        <i class="fas fa-file-contract"></i>Nivee
+    </a>  
+    <button class="menu-icon">
+        <i class="fas fa-bars"></i>
+    </button> 
+    <ul class="nav-list">
+        <li>
+            <a href="#home">home</a>
+        </li>
+        <li>
+            <a href="#about">about</a>
+        </li>
+        <li>
+            <a href="#service">services</a>
+        </li>
+        <li>
+            <a href="#team">team</a>
+        </li>
+        <li>
+            <a href="#contact">contact</a>
+        </li>
+    </ul>
+</nav>
+<header id="home" class="home">
+    <h1 class="banner">web design & development services</h1>
+    <h3 class="slogan">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    <a href="#">about us</a>
+
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    
+    <div class="fas fa-coins nut1"></div>
+    <div class="fas fa-coins nut2"></div>
+</header>
+<!-- end of header and nav-->
+<!-- about -->
+<section id="about" class="about">
+    <h1 class="heading">about us</h1>
+    <div class="row">
+      <div class="content">
+        <h3>We build websites that build your business</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea amet iure deserunt doloremque voluptate distinctio rerum! Quas sunt inventore illum facere minus voluptas fugit, magni quidem cumque! Animi, illo magni.</p>
+        <a href="#" class="all-btns">read more</a>
+      </div>
+      <div class="image">
+        <img src="{% static 'img/about.svg' %}" alt="toon image of a woman with a monitor">
+      </div>
+    </div>
+</section>
+<!-- end of about -->
+<!-- services -->
+<section id="service" class="service">
+    <h1 class="heading">our services</h1>
+    <div class="row">
+        <div class="image">
+            <img src="{% static 'img/img2.svg' %}" alt="">
+        </div>
+        <div class="content">
+            <h3>website development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="content">
+            <h3>mobile freindly</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'img/img3.svg' %}" alt="">
+        </div>
+    </div>
+    <div class="row">        
+        <div class="image">
+            <img src="{% static 'img/img4.svg' %}" alt="">
+        </div>
+        <div class="content">
+            <h3>responsive design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="content">
+            <h3>web hosting</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'img/img6.svg' %}" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="image">
+            <img src="{% static 'img/img7.svg' %}" alt="">
+        </div>
+        <div class="content">
+            <h3>seo freindly</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="content">
+            <h3>graphic design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'img/img8.svg' %}" alt="toon image">
+        </div>
+    </div>
+</section>    
+<!-- end of services -->
+<!-- team -->
+<section id="team" class="team">
+    <h1 class="heading">our team</h1>
+    <div class="row">
+        <div class="card">
+            <div class="image">
+            <img src="{% static 'img/pic1.png' %}" alt="person image">
+            </div>
+            <div class="info">
+            <h3>someone's name</h3>
+            <span>web designer</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'img/pic2.png' %}" alt="person image">
+            </div>
+            <div class="info">
+                <h3>someone's name</h3>
+                <span>web designer</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'img/pic3.png' %}" alt="person image">
+            </div>
+            <div class="info">
+                <h3>someone's name</h3>
+                <span>web designer</span>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!-- end of team -->
+{% endblock %}
