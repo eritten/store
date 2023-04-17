@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique ad cum impedit fugiat. Doloribus saepe quidem quod quae, adipisci, earum ea beatae laboriosam eveniet id consequatur. Nostrum, recusandae soluta?">
+    <title>Nivee home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <script src="{% static 'js/all.js' %}"></script>
+</head>
+<body> 
+
+{% block content %}
+{% endblock %}
+<!-- footer -->
+<footer>
+    <h1>created by Sewonet &copy; 2023 | all rights reserved.</h1>
+    <div class="icons">
+        <a href="#">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>    
+</footer>
+<!-- end of footer -->
+<script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+<!-- aos init -->
+<script>
+     AOS.init({
+        offset: 50,
+        delay: 100,
+        duration: 800,
+        easing: 'ease',
+        once: false,
+        mirror: false,
+        anchorPlacement: 'top-bottom'
+    })
+</script>
+</body>
+</html>
