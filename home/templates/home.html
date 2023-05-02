@@ -3,8 +3,8 @@
 {% block content %}
 <!-- header and nav -->
 <nav>
-    <a href="#" class="logo" aria-label="logo">
-        <i class="fas fa-file-contract"></i>Nivee
+    <a href="{% url 'home' %}" class="logo" aria-label="logo">
+        <img src="{% static 'img/logo.jpg' %}" alt="logo">
     </a>  
     <button class="menu-icon" aria-label="menubar button">
         <i class="fas fa-bars"></i>
@@ -28,8 +28,9 @@
     </ul>
 </nav>
 <header id="home" class="home">
-    <h1 class="banner">web design & development services</h1>
-    <h3 class="slogan">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    <h1 class="banner">Nivee Company Limited</h1>
+    <h3 class="slogan">We are a registered Limited Liability Company in the state of Delaware with a global reach. We pride 
+        ourself on the premises of saving our clients time and money.</h3>
     <a href="#about">about us</a>
 
     <div class="wave wave1"></div>
@@ -45,9 +46,10 @@
     <h1 class="heading">about us</h1>
     <div class="row">
       <div class="content">
-        <h3>We build websites that build your business</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea amet iure deserunt doloremque voluptate distinctio rerum! Quas sunt inventore illum facere minus voluptas fugit, magni quidem cumque! Animi, illo magni.</p>
-        <a href="{% url 'about' %}" class="all-btns">read more</a>
+        <h3>Nivee Company Limited.</h3>
+        <p>We are a registered Limited Liability Company in the state of Delaware with a global reach. We pride 
+            ourself on the premises of saving our clients time and money.</p>
+        <!-- <a href="{% url 'about' %}" class="all-btns">read more</a> -->
       </div>
       <div class="image">
         <img src="{% static 'img/about.svg' %}" alt="toon image of a woman with a monitor">
@@ -63,14 +65,16 @@
             <img src="{% static 'img/img2.svg' %}" alt="">
         </div>
         <div class="content">
-            <h3>website development</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
+            <h3>Bookkeeping</h3>
+            <p>We provide daily, monthly, quarterly and annual bookkeeping services to small and medium size firms in 
+                North America and Europe.</p>
         </div>
     </div>
     <div class="row">
         <div class="content">
-            <h3>mobile freindly</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
+            <h3>Taxation</h3>
+            <p>We provide individual and corporate tax solutions in North America. We also prepare individual tax 
+                returns for citizens living abroad.</p>
         </div>
         <div class="image">
             <img src="{% static 'img/img3.svg' %}" alt="">
@@ -78,38 +82,26 @@
     </div>
     <div class="row">        
         <div class="image">
-            <img src="{% static 'img/img4.svg' %}" alt="">
-        </div>
-        <div class="content">
-            <h3>responsive design</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="content">
-            <h3>web hosting</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
-        </div>
-        <div class="image">
-            <img src="{% static 'img/img6.svg' %}" alt="">
-        </div>
-    </div>
-    <div class="row">
-        <div class="image">
             <img src="{% static 'img/img7.svg' %}" alt="">
         </div>
         <div class="content">
-            <h3>user freindly</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
+            <h3>Store Buffet</h3>
+            <p>We own and manage this ecommerce platform for all kinds of shoppers who are looking to save time 
+                and money. Our platform makes it easy for shoppers to virtually search across all retail websites and 
+                compare prices, products, shipping, etc. Retailers on the other hand, are benefiting from less returns 
+                from customers as the app enables buyers to make an informed decisions prior to buying. Also, buyers 
+                can easily monitor rollbacks and new deals.</p>
         </div>
     </div>
     <div class="row">
         <div class="content">
-            <h3>graphic design</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet. Inventore voluptas nemo placeat. Voluptas.</p>
+            <h3>Software Development</h3>
+            <p>We develop and market software for individuals and companies who are looking to bring efficiency to 
+                their lives and businesses. Our team of engineers are subject matter experts in over 32 programming 
+                languages.</p>
         </div>
         <div class="image">
-            <img src="{% static 'img/img8.svg' %}" alt="toon image">
+            <img src="{% static 'img/img8.svg' %}" alt="">
         </div>
     </div>
 </section>    
@@ -123,8 +115,11 @@
             <img src="{% static 'img/pic1.png' %}" alt="person image">
             </div>
             <div class="info">
-            <h3>someone's name</h3>
-            <span>web designer</span>
+            <h3>Tim Starke, CEO</h3>
+            <div class="text-box">
+                Tim is a certified public accountant with over 10 years of experience in accounting, finance and taxation. 
+                    His desire to help people achieve financial independence led to the formation of Nivee LLC.
+            </div>
             </div>
         </div>
         <div class="card">
@@ -132,8 +127,12 @@
                 <img src="{% static 'img/pic2.png' %}" alt="person image">
             </div>
             <div class="info">
-                <h3>someone's name</h3>
-                <span>web designer</span>
+                <h3>Dr Victoria Stevens, Chair</h3>
+                <div class="text-box">
+                    Dr Stevens is a physician who grew up doing bookkeeping for her family business. With her diverse 
+                    background, our team stand to enjoy her perspective and the healthcare and wellness clients she brings 
+                    to the table.
+                </div>
             </div>
         </div>
         <div class="card">
@@ -141,8 +140,23 @@
                 <img src="{% static 'img/pic3.png' %}" alt="person image">
             </div>
             <div class="info">
-                <h3>someone's name</h3>
-                <span>web designer</span>
+                <h3>Marshall Arkyo, COO</h3>
+                <div class="text-box">
+                    Our COO has a degree in accounting. He is also an IBM certified software engineer with over 15 years of
+                    experience
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'img/pic3.png' %}" alt="person image">
+            </div>
+            <div class="info">
+                <h3>Riley Coxen, Executive Assistant</h3>
+                <div class="text-box">
+                    Riley has over 20 years’ experience on Wall Street serving as secretary to managing directors. She also 
+                    worked as a law firm clerk for 5 years in Chicago.
+                </div>
             </div>
         </div>
     </div>
@@ -152,22 +166,22 @@
 <!-- contact -->
 <section id="contact" class="contact">
     <h1 class="heading">contact us</h1>
-<div class="row">
-    <div class="image">
-        <img src="{% static 'img/img5.svg' %}" alt="toon image">
+    <div class="row">
+        <div class="image">
+            <img src="{% static 'img/img5.svg' %}" alt="toon image">
+        </div>
+        <div class="form-container">
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="first name">
+                    <input type="text" placeholder="last name">
+                </div>
+                <input type="email" placeholder="email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                <input type="submit" class="all-btns" value="send">
+            </form>
+        </div>
     </div>
-    <div class="form-container">
-        <form action="">
-            <div class="inputBox">
-                <input type="text" placeholder="first name">
-                <input type="text" placeholder="last name">
-            </div>
-            <input type="email" placeholder="email">
-            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
-            <input type="submit" class="all-btns" value="send">
-        </form>
-    </div>
-</div>
 </section>
 <!-- end of contact -->
 <!-- faq -->
@@ -227,4 +241,21 @@
     </div>
 </section>
 <!-- end of faq -->
+<!-- contact info -->
+<section class="cont-info">
+    <div class="cont-info-wrapper">
+        <h2>Contact Us
+        </h2>
+        <br>
+        <ul>
+            <li>1255 Magie Ave Suite 352
+            </li>
+            <li>Union, NJ 07083</li>
+            <li>Phone: (520) 261-1319</li>
+            <li>Email: adm@niveellc.com</li>
+            <li>Hours: M-F, 8am to 5pm ET</li>
+        </ul>
+    </div>
+</section>
+<!-- end of contact info -->
 {% endblock %}
