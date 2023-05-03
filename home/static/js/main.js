@@ -8,7 +8,15 @@ window.addEventListener("load", ()=>{
     function toggleNav() {
         navList.classList.toggle("active")
     }
-
+    function removeMenu() {
+      navList.classList.remove("active")
+    }
+    const allLinks = document.querySelectorAll(".nav-list a")
+          allLinks.forEach(link => {
+            link.addEventListener("click", ()=>{
+              removeMenu()
+            })
+          });
     // navbar on scroll
     $(window).on('scroll',function(){
         if($(window).scrollTop() > 70){
@@ -17,5 +25,14 @@ window.addEventListener("load", ()=>{
           $('nav').css({'background':'none','box-shadow':'none'});
         }
       });
+      // faq accordion
+      $('.accordion-header').click(function(){
+        $('.accordion .accordion-body').slideUp();
+        $(this).next('.accordion-body').slideDown();
+        $('.accordion .accordion-header span').text('+');
+        $(this).children('span').text('-');
+      });
+    
+    
     
 })
