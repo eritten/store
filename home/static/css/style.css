@@ -6,7 +6,7 @@
     --mainColor: rgb(108, 92, 231);
     --box-shadow: .2rem .2rem .5rem rgba(0,0,0,.2);
     --max-width: 1200px;
-    --gradient: linear-gradient(purple, var(--mainColor));
+    --gradient: linear-gradient(rgb(18, 3, 91), var(--mainColor));
 }
 html {
     scroll-behavior: smooth;
@@ -198,7 +198,7 @@ nav .menu-icon {
 header {
     min-height: 100vh;
     width: 100vw;
-    background:linear-gradient(rgb(64, 0, 128), var(--mainColor));
+    background:linear-gradient(rgb(32, 2, 107), var(--mainColor));
     display: flex;
     align-items: center;
     justify-content: center;
