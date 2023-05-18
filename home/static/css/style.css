@@ -507,7 +507,6 @@ header .nut2{
     margin:7rem 2rem;
     position: relative;
     overflow: hidden;
-    -webkit-box-reflect: below .2rem linear-gradient(transparent 70%, #0004);
 }
 .team .row .card:hover::before, 
 .team .row .card:hover::after{
