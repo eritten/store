@@ -115,7 +115,7 @@ textarea {
     letter-spacing: .2rem;
     text-transform: uppercase;
   }
-.heading::before, 
+/* .heading::before, 
 .heading::after {
     content: '';
     position: absolute;
@@ -132,7 +132,7 @@ textarea {
     bottom: -.5rem; 
     right: -2rem;
     transform: rotate(180deg);
-}
+} */
 .cont-info {
     background: var(--mainColor);
     color: var(--white);
