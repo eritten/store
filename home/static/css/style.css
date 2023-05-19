@@ -134,8 +134,13 @@ textarea {
     transform: rotate(180deg);
 } */
 .cont-info {
-    background: var(--mainColor);
     color: var(--white);
+    margin-bottom: 5rem;
+}
+.cont-info-wrapper {
+    width: 50%;    
+    background: var(--mainColor);
+    padding: 2rem;
 }
 body {
     overflow-x: hidden;
