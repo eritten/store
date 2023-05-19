@@ -133,7 +133,9 @@ textarea {
     right: -2rem;
     transform: rotate(180deg);
 }
-
+.cont-info {
+    background: var(--mainColor);
+}
 body {
     overflow-x: hidden;
     font-family: roboto, "Helvetica Neue", sans-serif;
