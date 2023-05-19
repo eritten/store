@@ -135,6 +135,7 @@ textarea {
 }
 .cont-info {
     background: var(--mainColor);
+    color: var(--white);
 }
 body {
     overflow-x: hidden;
