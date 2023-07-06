@@ -33,6 +33,8 @@ ALLOWED_HOSTS = ["*"]
 INSTALLED_APPS = [
 'home',   
 'api',
+'rest_framework',
+'rest_framework_simplejwt',
  'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -53,6 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 ROOT_URLCONF = 'store.urls'
 
