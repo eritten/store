@@ -1,5 +1,5 @@
 :root {
-    --white: #fff;
+    --white: #fff; 
     --grey: #ccc;
     --black: #222;
     --textColor: #333;
@@ -442,18 +442,25 @@ header .nut2{
     justify-content: center;
 }
 .service .row .image {
-    width: 50vw;
-    height: 55vh;
+    flex: 1;
+    height: 50rem;
+    position: relative;
 }
 .service .row .image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .service .row .content {
     text-align: left;
     padding: 0 3rem;
     max-width: 60%;
+    flex: 1;
 }
 .service .row .content h3 {
     font-size: 3rem;
@@ -465,27 +472,37 @@ header .nut2{
     color: var(--textColor);
     padding: 1rem 0;
 }
+@media (max-width: 991px) {
+    .service .row .image {
+        height: 40rem;
+    }
+}
 @media (max-width: 768px) {
     .service .row {
         flex-flow: column-reverse;
+        padding: 0 1rem;
+        margin: 5rem 0;
     }
     .service .row:nth-child(even){
         flex-flow: column;
     }
-    .service .row .image img{
-        width: 100vw;
+    .service .row .image {
+        height: 30rem;
+        width: 100%;
+        flex: none;
     }
     .service .row .content{
         padding:0;
         max-width: none;
+        flex: none;
     }
 }
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
     .service .row .image {
         width: 100%;
         height: 35vh;
     }
-}
+} */
 /* end of services */
 /* team */
 .team{
