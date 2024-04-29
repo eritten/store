@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background-color: var(--mainColor);
+    }
+    .home-link {
+        color: #fff;
+        font-size: 2.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .anystore-section {
+        min-height: 90vh;
+        padding: 2rem 1rem!important;
+    }
+    .head {
+        color: var(--mainColor);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2rem;
+        text-decoration: underline;
+        letter-spacing: 1px;
+    }
+    .date {
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        color: var(--mainColor);
+    }
+    p {
+        margin-bottom: 1rem;
+        font-weight: normal!important;
+        font-family: roboto, sans-serif;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+    .body {
+        padding: 0 1rem;
+    }
+    .list {
+        padding: 1rem;
+    }
+    .ul-head {
+        color: var(--mainColor);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    
+    }
+    .intro-head {
+        color: var(--mainColor);
+        font-size: 2.1rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+</style>
+<nav role="navigation">
+    <a href="{% url 'home' %}" class="home-link">Home</a>
+</nav>
+<main style="padding-top: 4.6rem;">
+    <section class="anystore-section">
+        <div class="head-container">
+            <h1 class="head">Privacy Policy for Anystore Mobile Application</h1>
+            <code class="date">Effective Date: July 11, 2023.</code>
+        </div>
+        <div class="body">
+            <p>Thank you for using Anystore, a mobile application that serves as a search engine for online shops and e-commerce websites. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our App. Please read this Privacy Policy carefully to understand our practices regarding your personal information and how we will treat it.</p>
+            <p>If you do not agree with the practices described in this Privacy Policy, please do not use the Anystore App. By using the App, you consent to the collection, use, and disclosure of your personal information as described in this Privacy Policy.</p>
+
+            <h3 class="intro-head">1. Information We Collect</h3>
+            <ul class="list">
+                <li>
+                    <h4 class="ul-head">1.1 Personal Information: </h4>
+                    <p>We may collect personal information that can be used to identify you, such as your name, email address, and other contact details. This information is collected when you register an account or communicate with us through the App. Using the App’s QR/Barcode scanner means you agree to use your camera.</p>
+                </li>
+                <li>
+                    <h4 class="ul-head">1.2 Device Information: </h4>
+                    <p>We may collect certain information about your mobile device, including your device type, unique device identifier, operating system, and mobile network information.</p>
+                </li>
+                <li>
+                    <h4 class="ul-head">1.3 Log Information: </h4>
+                    <p>When you use our App, we automatically collect and store certain information in server logs. This may include your IP address, device event information such as crashes, system activity, and the date and time of your use of the App.</p>
+                </li>
+                <li>
+                    <h4 class="ul-head">1.4 Analytics Information: </h4>
+                    <p>We may use third-party analytics tools to collect and analyze usage information to improve the functionality and user experience of the App. This information is collected in a way that does not personally identify you.</p>
+                </li>
+            </ul>
+
+            <h3 class="intro-head">2. Use of Information</h3>
+            <ul class="list">
+                <h4 class="ul-head">2.1 We may use the information we collect to:</h4>
+                <ul style="list-style: disc; padding: 1rem 2.2rem;">
+                    <li>Provide and maintain the App's functionality and features.</li>
+                    <li>Personalize and improve your experience with the App.</li>
+                    <li>Respond to your inquiries, requests, or feedback.</li>
+                    <li>Send you administrative information, updates, and promotional messages related to the App.</li>
+                    <li>Monitor and analyze usage and trends of the App.</li>
+                    <li>Enforce our terms and conditions and protect our rights and the rights of others.</li>
+                </ul>
+            </ul>
+
+            <h3 class="intro-head">3. Sharing of Information</h3>
+            <ul class="list">
+                <ul class="list">
+                    <li>
+                        <p>3.1 We may share your personal information with third-party service providers, business partners, or affiliates who assist us in providing and improving the App's functionality. These third parties are obligated to maintain the confidentiality and security of your personal information and are not authorized to use or disclose it for any purpose other than providing services on our behalf.</p>
+                    </li>
+                    <li>
+                        <p>3.2 We may also disclose your personal information if required by law, regulation, legal process, or governmental request, or as necessary to protect our rights or the rights of others.</p>
+                    </li>
+                </ul>
+            </ul>
+
+            <h3 class="intro-head">4. Data Security</h3>
+            <ul class="list">
+                <li>
+                    <p>4.1 We strive to implement appropriate technical and organizational measures to safeguard the personal information we collect. However, please be aware that no transmission of data over the internet or any wireless network can be guaranteed to be 100% secure. As a result, while we strive to protect your personal information, we cannot ensure or warrant the security of any information you transmit to us or through the App, and you do so at your own risk.</p>   
+                </li>
+            </ul>
+
+            <h3 class="intro-head">5. Children's Privacy</h3>
+            <ul class="list">
+                <li>
+                    <p>5.1 The App is not intended for individuals under the age of 12. We do not knowingly collect personal information from children. If we become aware that we have inadvertently collected personal information from a child under the age of 12, we will promptly delete it from our records.</p>
+                </li>
+            </ul>
+
+            <h3 class="intro-head">6. Changes to the Privacy Policy</h3>
+            <ul class="list">
+                <li>
+                    <p>6.1 We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the "Effective Date" at the top will indicate when the changes become effective. Your continued use of the App after any changes to this Privacy Policy will signify your acceptance of those changes.</p>
+                </li>
+            </ul>
+
+            <h3 class="intro-head">7. Contact Us</h3>
+            <ul class="list">
+                <li>
+                    <p>7.1 If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at <a href="mailto:adm@niveel.com" style="text-decoration: underline;">adm@niveel.com</a>.</p>
+                </li>
+                <li>
+                    <p>By using the Anystore App, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+{% endblock %}

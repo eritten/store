@@ -20,9 +20,63 @@
 
 {% block content %}
 {% endblock %}
+<style>
+    footer {
+        padding-top: 4rem!important;
+        padding-bottom: 4rem!important;
+    }
+    footer h2 {
+        color: #fff;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin-bottom: .5rem;
+    }
+    footer ul li {
+        margin-bottom: .6rem;
+    }
+    footer ul a {
+        color: #fff;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        text-decoration: none;
+    }
+    footer ul a:hover {
+        text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+        footer ul {
+            margin-bottom: 1.5rem;
+        }
+        .cont-info-wrapper {
+            width: 100%!important;
+        }
+    }
+</style>
 <!-- footer -->
 <footer>
-    <h1>Powered by Nivee LLC &copy; 2023 | all rights reserved.</h1>
+    <div class="footer-left">
+        <ul>
+            <h2>Our Privacy Policy</h2>
+            <li>
+                <a href="{% url 'privacy' %}">Anystore privacy policy</a>
+            </li>
+            <li>
+                <a href="{% url 'privacy' %}">Itsreaddy privacy policy</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-mid">
+        <ul>
+            <h2>Our <abbr title="Terms and conditions">T&C's</abbr></h2>
+            <li>
+                <a href="{% url 'privacy' %}">Anystore Terms and conditions</a>
+            </li>
+            <li>
+                <a href="{% url 'privacy' %}">Itsreaddy Terms and conditions</a>
+            </li>
+        </ul>
+    </div>
     <div class="icons">
         <a href="https://www.facebook.com/profile.php?id=100092512873811" aria-label="facebook">
             <i class="fab fa-facebook-f"></i>
@@ -36,6 +90,7 @@
         <a href="https://www.linkedin.com/company/nivee-llc" aria-label="linked in">
             <i class="fab fa-linkedin"></i>
         </a>
+        <h1 style="margin-top: 1rem;">Powered by Nivee LLC &copy; 2023 | all rights reserved.</h1>
     </div>    
 </footer>
 <!-- end of footer -->
