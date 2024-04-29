@@ -22,3 +22,6 @@ def terms(request):
 
 def privacy(request):
     return render(request, "privacy.html")
+
+def itsreaddy_privacy(request):
+    return render(request, "itsreaddy_privacy.html")

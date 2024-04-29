@@ -10,6 +10,7 @@ path("about/", views.about, name="about"),
 path("contact/", views.contact, name="contact"),
 #path("detail/<str:title>/<int:year>/<int:month>/<int:day>/", views.detail, name="detail"),
 path("privacy/", views.privacy, name="privacy"),
+path("itsreaddy_privacy/", views.itsreaddy_privacy, name="itsreaddy_privacy"),
 path("terms/", views.terms, name="terms"),
 
     path('admin/', admin.site.urls),
