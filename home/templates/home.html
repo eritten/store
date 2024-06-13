@@ -4,7 +4,7 @@
 <!-- header and nav -->
 <nav>
     <a href="{% url 'home' %}" class="logo" aria-label="logo">
-        <img src="{% static 'img/logo.jpg' %}" alt="logo">
+        <img src="{% static 'img/logo.jpg' %}" alt="logo" style="border-radius: 6px;">
     </a>  
     <button class="menu-icon" aria-label="menubar button">
         <i class="fas fa-bars"></i>
@@ -28,10 +28,10 @@
     </ul>
 </nav>
 <header id="home" class="home">
-    <h1 class="banner">Nivee LLC</h1>
-    <h3 class="slogan" style="max-width: 800px;">We are a registered Limited Liability Company in the state of Delaware with a global reach. We pride 
+    <h1 class="banner" data-aos="fade-up">Nivee LLC</h1>
+    <h3 class="slogan" style="max-width: 800px;" data-aos="fade-up" data-aos-delay="500">We are a registered Limited Liability Company in the state of Delaware with a global reach. We pride 
         ourselves on the premises of saving our clients time and money.</h3>
-    <a href="#about">about us</a>
+    <a href="#about" data-aos="fade-up" data-aos-delay="1000">about us</a>
 
     <div class="wave wave1"></div>
     <div class="wave wave2"></div>
@@ -43,48 +43,48 @@
 <!-- end of header and nav-->
 <!-- about -->
 <section id="about" class="about">
-    <h1 class="heading">about us</h1>
+    <h1 class="heading" data-aos="fade-left">about us</h1>
     <div class="row">
-      <div class="content">
+      <div class="content" data-aos="fade-right" data-aos-delay="100">
         <h3>Nivee LLC</h3>
         <p>We are a Delaware registered limited liability company with a global reach. We pride ourselves on the premises of saving our clients time and money. From bookkeeping to taxation, we also provide Store Buffet for shoppers convenience. We are and will always be on the mission to providing you a better and easy lives.</p>
         <!-- <a href="{% url 'about' %}" class="all-btns">read more</a> -->
       </div>
-      <div class="image">
-        <img src="{% static 'img/about.svg' %}" alt="toon image of a woman with a monitor">
+      <div class="image" data-aos="fade-left" data-aos-delay="500">
+        <img src="{% static 'img/girl2.png' %}" alt="toon of a woman with a monitor" style="object-fit: contain;">
       </div>
     </div> 
 </section>
 <!-- end of about -->
 <!-- services -->
 <section id="service" class="service">
-    <h1 class="heading">our services</h1>
+    <h1 class="heading" data-aos="fade-left">our services</h1>
     <div class="row">
-        <div class="image">
-            <img src="{% static 'img/img2.svg' %}" alt="">
+        <div class="image" data-aos="fade-left" data-aos-delay="500">
+            <img src="{% static 'img/book.jpeg' %}" alt="toon man keeping records." style="object-fit: contain;">
         </div>
-        <div class="content">
+        <div class="content" data-aos="fade-right" data-aos-delay="100">
             <h3>Bookkeeping</h3>
             <p>We provide daily, monthly, quarterly and annual bookkeeping services to small and medium size firms in 
                 North America and Europe.</p>
         </div>
     </div>
     <div class="row">
-        <div class="content">
+        <div class="content" data-aos="fade-right" data-aos-delay="500">
             <h3>Taxation</h3>
             <p>We provide individual and corporate tax solutions in North America. We also prepare individual tax 
                 returns for citizens living abroad.</p>
         </div>
-        <div class="image">
-            <img src="{% static 'img/tax.jpg' %}" alt="">
+        <div class="image" data-aos="zoom-out" data-aos-delay="600">
+            <img src="{% static 'img/tax.jpeg' %}" alt="A lady in a tax setting." style="object-fit: contain;">
         </div>
     </div>
     <div class="row">        
-        <div class="image">
-            <img src="{% static 'img/img7.svg' %}" alt="">
+        <div class="image" data-aos="fade-right" data-aos-delay="100" style="border-radius: 1rem; overflow: hidden;">
+            <img src="{% static 'img/shop.png' %}" alt="" style="object-fit: contain; border-radius: 1rem;">
         </div>
-        <div class="content">
-            <h3>Anystore</h3>
+        <div class="content" data-aos="fade-left" data-aos-delay="600">
+            <h3>Shopwit</h3>
             <p>We own and manage this ecommerce platform for all kinds of shoppers who are looking to save time 
                 and money. Our platform makes it easy for shoppers to virtually search across all retail websites and 
                 compare prices, products, shipping, etc. Retailers on the other hand, are benefiting from less returns 
@@ -93,19 +93,19 @@
         </div>
     </div>
     <div class="row">
-        <div class="content"> 
+        <div class="content" data-aos="fade-left" data-aos-delay="100"> 
             <h3>Itsreaddy</h3>
             <p>Itsreaddy is a mobile responsive application enabling instant text messaging and voice mailing. Service providers rely on our platform to communicate with their customers at the click of a button.</p>
         </div>
-        <div class="image">
-            <img src="{% static 'img/itsreaddy.jpg' %}" alt="">
+        <div class="image" data-aos="fade-right" data-aos-delay="600">
+            <img src="{% static 'img/itsreaddy.jpg' %}" alt="" style="object-fit: contain;">
         </div>
     </div>
     <div class="row">
-        <div class="image">
-            <img src="{% static 'img/img8.svg' %}" alt="">
+        <div class="image" data-aos="fade-left" data-aos-delay="100">
+            <img src="{% static 'img/soft-dev.jpeg' %}" alt="A young software engineer with a computer." style="object-fit: contain; border-radius: 10px;">
         </div>
-        <div class="content">
+        <div class="content" data-aos="fade-right" data-aos-delay="600">
             <h3>Software Development</h3>
             <p>We develop and market software for individuals and companies who are looking to bring efficiency to 
                 their lives and businesses. Our team of engineers are subject matter experts in over 32 programming 
@@ -117,10 +117,10 @@
 <!-- end of services -->
 <!-- team -->
 <section id="team" class="team">
-    <h1 class="heading">our team</h1>
+    <h1 class="heading" data-aos="fade-right" data-aos-delay="100">our team</h1>
     <div class="row">
         <!-- Start -->
-        <div class="card">
+        <div class="card" data-aos="zoom-out" data-aos-delay="100">
             <div class="image">
                 <img src="{% static 'img/pic2.png' %}" alt="person image">
             </div>
@@ -135,7 +135,7 @@
         </div>
         <!-- end -->
         <!-- start -->
-        <div class="card">
+        <div class="card" data-aos="zoom-out" data-aos-delay="200">
             <div class="image">
             <img src="{% static 'img/pic1.png' %}" alt="person image">
             </div>
@@ -149,7 +149,7 @@
         </div>
         <!-- end -->
         <!-- start -->
-        <div class="card">
+        <div class="card" data-aos="zoom-out" data-aos-delay="300">
             <div class="image">
                 <img src="{% static 'img/ind.png' %}" alt="person image">
             </div>
@@ -162,7 +162,7 @@
         </div>
         <!-- end -->
         <!-- start -->
-        <div class="card">
+        <div class="card" data-aos="zoom-out" data-aos-delay="400">
             <div class="image">
                 <img src="{% static 'img/pic3.png' %}" alt="person image">
             </div>
@@ -176,7 +176,7 @@
         </div>
         <!-- end -->
         <!-- start -->
-        <div class="card">
+        <div class="card" data-aos="zoom-out" data-aos-delay="500">
             <div class="image">
                 <img src="{% static 'img/wom.jpg' %}" alt="person image">
             </div>
@@ -197,18 +197,18 @@
     <h1 class="heading">contact us:</h1>
     <p style="text-align: center; color: white; text-transform: capitalize; margin-bottom: 2rem;">Send us a message via email:</p>
     <div class="row">
-        <div class="image">
-            <img src="{% static 'img/img5.svg' %}" alt="toon image">
+        <div class="image" data-aos="zoom-out" data-aos-delay="500">
+            <img src="{% static 'img/contact.png' %}" alt="toon male and female with a contact form." style="border-radius: 10px; object-fit: contain;">
         </div>
         <div class="form-container">
             <form action="">
                 <div class="inputBox">
-                    <input type="text" placeholder="First name">
-                    <input type="text" placeholder="Last name">
+                    <input type="text" placeholder="First name" data-aos="fade-up" data-aos-delay="100">
+                    <input type="text" placeholder="Last name" data-aos="fade-up" data-aos-delay="200">
                 </div>
-                <input type="email" placeholder="Your email">
-                <textarea name="" id="" cols="30" rows="10" maxlength="400" placeholder="Message"></textarea>
-                <input type="submit" class="all-btns" value="send">
+                <input type="email" placeholder="Your email" data-aos="fade-up" data-aos-delay="300">
+                <textarea name="" id="" cols="30" rows="10" maxlength="400" placeholder="Message" data-aos="fade-up" data-aos-delay="400"></textarea >
+                <input type="submit" class="all-btns" value="send" data-aos="fade-up" data-aos-delay="500">
             </form>
         </div>
     </div>
@@ -217,9 +217,9 @@
 <!-- faq -->
 <section id="faq" class="faq">
     <h1 class="heading">FAQs/</h1>
-    <div class="row">
+    <div class="row" style="gap: 1rem;">
         <div class="image">
-            <img src="{% static 'img/faq.svg' %}" alt="">
+            <img src="{% static 'img/faq.png' %}" alt="Purple FAQ letters." style="object-fit: contain; filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.4)); border-radius: 10px;" >
         </div>
         <div class="accordion-container">
             <div class="accordion">
@@ -308,7 +308,7 @@
 <!-- end of faq -->
 <!-- contact info -->
 <section class="cont-info">
-    <div class="cont-info-wrapper">
+    <div class="cont-info-wrapper" data-aos="fade-right">
         <h2>Contact Us:
 /        </h2>
         <br>

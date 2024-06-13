@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background-color: var(--mainColor);
+    }
+    .home-link {
+        color: #fff;
+        font-size: 2.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .anystore-section {
+        min-height: 90vh;
+        padding: 2rem 1rem!important;
+    }
+    .head {
+        color: var(--mainColor);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2rem;
+        text-decoration: underline;
+        letter-spacing: 1px;
+    }
+    .date {
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        color: var(--mainColor);
+    }
+    p {
+        margin-bottom: 1rem;
+        font-weight: normal!important;
+        font-family: roboto, sans-serif;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+    .body {
+        padding: 0 1rem;
+    }
+    .list {
+        padding: 1rem;
+    }
+    .ul-head {
+        color: var(--mainColor);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    
+    }
+    .intro-head {
+        color: var(--mainColor);
+        font-size: 2.1rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+</style>
+<nav role="navigation">
+    <a href="{% url 'home' %}" class="home-link">Home</a>
+</nav>
+<main style="padding-top: 4.6rem;">
+    <section class="anystore-section">
+        <div class="head-container">
+            <h1 class="head">Terms and Conditions for Shopwit Mobile Application</h1>
+            <code class="date">Effective Date: June 13, 2024.</code>
+        </div>
+        <div class="body">
+            <p>Welcome to Shopwit, a mobile application that serves as a search engine for online shops and e-commerce websites. These Terms and Conditions ("Terms") govern your use of the Shopwit App. By using the App, you agree to comply with and be bound by these Terms. If you do not agree with these Terms, please do not use the Shopwit App.</p>
+
+            <h3 class="intro-head">1. Use of the App</h3>
+            <ul class="list">
+                <li>
+                    <h4 class="ul-head">1.1 License: </h4>
+                    <p>Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App for your personal and non-commercial purposes.</p>
+                </li>
+                <ul class="list">
+                    <ul class="list">
+                        <h4 class="ul-head">1.2 Restrictions: You agree not to:</h4>
+                        <ul style="list-style: disc; padding: 1rem 2.2rem;">
+                            <li>Use the App for any unlawful purpose or in violation of any applicable laws or regulations.</li>
+                            <li>Modify, adapt, translate, or create derivative works of the App.</li>
+                            <li>Reverse engineer, decompile, disassemble, or attempt to extract the source code of the App.</li>
+                            <li>Remove, alter, or obscure any copyright, trademark, or other proprietary notices from the App.</li>
+                            <li>Use the App to transmit any viruses, malware, or other malicious code.</li>
+                            <li>Interfere with or disrupt the operation of the App or its servers.</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+
+            <h3 class="intro-head">2.Third-Party Content and Links</h3>
+            <ul class="list">
+                <li>
+                    <p>2.1 The App may display content from third-party websites or applications ("Third-Party Content"). We do not endorse or assume any responsibility for Third-Party Content, and your use of Third-Party Content is at your own risk.</p>
+                </li>
+                <li>
+                    <p>2.2 The App may also contain links to third-party websites or services ("Third-Party Links"). We are not responsible for the availability, accuracy, or content of Third-Party Links. Accessing Third-Party Links is solely your responsibility, and we recommend reviewing the terms and privacy policies of any third-party websites or services before using them.</p>
+                </li>
+                <li>
+                    <p>2.3 You are responsible for content you post on the App. You agree not to post content that is illegal, harmful, or violates any third-party rights. Depending on the severity of the content, Shopwit reserves the rights to flag such content, warn or remove you from the platform for such behavior. You have the right to report users that indulge in such behavior too. You can also choose to flag, block or exit any group chat that you dislike or find offensive.</p>
+                </li>
+            </ul>
+
+            <h3 class="intro-head">3. Intellectual Property Rights</h3>
+            <ul class="list">
+                <ul class="list">
+                    <li>
+                        <p>3.1 The App and its content, including but not limited to text, graphics, logos, images, and software, are the intellectual property of Shopwit or its licensors and are protected by copyright, trademark, and other intellectual property laws. You agree not to reproduce, distribute, modify, or create derivative works of the App or its content without our prior written consent.</p>
+                    </li>
+                </ul>
+            </ul>
+
+            <h3 class="intro-head">4. Disclaimer of Warranties</h3>
+            <ul class="list">
+                <li>
+                    <p>4.1 The App is provided on an "as is" and "as available" basis, without any warranties or representations of any kind, whether express or implied. We do not warrant that the App will be error-free, uninterrupted, or free of viruses or other harmful components. Your use of the App is at your own discretion and risk.</p>   
+                </li>
+            </ul>
+
+            <h3 class="intro-head">5. Limitation of Liability</h3>
+            <ul class="list">
+                <li>
+                    <p>5.1 To the maximum extent permitted by applicable law, we shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or in connection with your use of the App, even if we have been advised of the possibility of such damages.</p>
+                </li>
+            </ul>
+
+            <h3 class="intro-head">6. Indemnification</h3>
+            <ul class="list">
+                <li>
+                    <p>6.1 You agree to indemnify and hold harmless Shopwit, its affiliates, officers, directors, employees, and agents from any claims, liabilities, damages, losses, costs, or expenses arising out of or in connection with your use of the App, your violation of these Terms, or your violation of any rights of any third party.</p>
+                </li>
+            </ul>
+
+            <h3 class="intro-head">7. Modifications to the Terms</h3>
+            <ul class="list">
+                <li>
+                    <p>7.1 We may update or modify these Terms at any time by posting the revised Terms on the App. Your continued use of the App after the posting of any changes constitutes your acceptance of the modified Terms.</p>
+                </li>
+            </ul>
+            <h3 class="intro-head">8. Termination</h3>
+            <ul class="list">
+                <li>
+                    <p>8.1 We may suspend or terminate your access to the App at any time, with or without cause or notice. Upon termination, you must cease all use of the App and delete it from your mobile device.</p>
+                </li>
+            </ul>
+            <h3 class="intro-head">9. Governing Law and Dispute Resolution</h3>
+            <ul class="list">
+                <li>
+                    <p>9.1 These Terms shall be governed by and construed in accordance with the laws of United States. Any disputes arising out of or in connection with these Terms shall be resolved exclusively through arbitration in accordance with the rules of Arbitration.</p>
+                </li>
+            </ul>
+            <h3 class="intro-head">10. Contact Us</h3>
+            <ul class="list">
+                <li>
+                    <p>10.1 If you have any questions or concerns about these Terms, please contact us at adm@niveel.com. <br>
+                        By using the Shopwit App, you acknowledge that you have read and understood these Terms and agree to be bound by them.
+                        </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+{% endblock %}
